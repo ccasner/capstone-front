@@ -5,7 +5,8 @@ export default DS.Model.extend({
   hidden: DS.attr('boolean'),
   location: DS.attr('string'),
   date: DS.attr('date'),
-  time: DS.attr('time'),
-  seats: DS.attr('integer'),
-  body: DS.attr('text')
+  time: DS.attr('date'),
+  seats: DS.attr('number'),
+  body: DS.attr('text'),
+  user: DS.belongsTo('user')
 });

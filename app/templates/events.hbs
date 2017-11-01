@@ -1,3 +1,9 @@
 <h2>Pool</h2>
+<ul>
+{{#each model as |event|}}
+  <li>{{event.title}}</li>
+{{/each}}
+</ul>
+
 
 {{#link-to "index"}} Go Home {{/link-to}}
