@@ -1,0 +1,9 @@
+<h3>Create a new Event</h3>
+
+<form {{action 'createEvent' on='submit'}}>
+
+  {{input placeholder='Event Name' value=newEvent.title}}
+  {{input placeholder='Event Location' value=newEvent.location}}
+
+  <button type='submit'>Save</button>
+</form>

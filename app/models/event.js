@@ -7,6 +7,6 @@ export default DS.Model.extend({
   date: DS.attr('date'),
   time: DS.attr('date'),
   seats: DS.attr('number'),
-  body: DS.attr('text'),
+  body: DS.attr('string'),
   user: DS.belongsTo('user')
 });
