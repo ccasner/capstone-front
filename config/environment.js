@@ -2,8 +2,8 @@
 
 module.exports = function (environment) {
   'use strict';
-  const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+  var ENV = {
+    modulePrefix: 'capstone-front',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -49,8 +49,10 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/capstone-front';
     ENV.locationType = 'hash';
-  }
+    ENV.apiHost = 'https://fathomless-scrubland-48602.herokuapp.com/';
+}
 
   return ENV;
 };
