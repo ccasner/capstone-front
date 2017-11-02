@@ -10,7 +10,6 @@ actions: {
       .then(()=> this.transitionTo('events'))
   },
   editEvent(events) {
-    console.log('gets here')
     events.save()
   }
 }
