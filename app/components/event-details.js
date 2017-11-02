@@ -5,10 +5,6 @@ export default Ember.Component.extend({
     deleteEvent() {
       console.log(this.get('event'))
       return this.sendAction('deleteEvent', this.get('event'))
-    },
-    editEvent() {
-      console.log(this.get('event'))
-      return this.sendAction('editEvent', this.get('event'))
     }
   }
 });

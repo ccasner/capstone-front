@@ -12,19 +12,25 @@ export default Ember.Component.extend({
   },
   actions: {
     editEvent() {
-      this.set('event.title', this.get('newEvent.title'))
-      this.set('event.location', this.get('newEvent.location'))
-      this.set('event.date', this.get('newEvent.date'))
-      this.set('event.time', this.get('newEvent.time'))
-      this.set('event.seats', this.get('newEvent.seats'))
-      this.set('event.body', this.get('newEvent.body'))
+      this.set('event.title', this.get('event.title'))
+      console.log(this.get('event.title'))
+      this.set('event.location', this.get('event.location'))
+      console.log(this.get('event.location'))
+      this.set('event.date', this.get('event.date'))
+      console.log(this.get('event.date'))
+      this.set('event.time', this.get('event.time'))
+      console.log(this.get('event.time'))
+      this.set('event.seats', this.get('event.seats'))
+      console.log(this.get('event.seats'))
+      this.set('event.body', this.get('event.body'))
+      console.log(this.get('event.body'))
       this.sendAction('editEvent', this.get('event'))
-      this.set('newEvent.title', null)
-      this.set('newEvent.location', null)
-      this.set('newEvent.date', null)
-      this.set('newEvent.time', null)
-      this.set('newEvent.seats', null)
-      this.set('newEvent.body', null)
+      // this.set('event.title', null)
+      // this.set('event.location', null)
+      // this.set('event.date', null)
+      // this.set('event.time', null)
+      // this.set('event.seats', null)
+      // this.set('event.body', null)
     }
   }
 });
