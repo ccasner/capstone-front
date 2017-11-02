@@ -5,10 +5,8 @@
   <li>{{event.seats}}</li>
   <li>{{event.body}}</li>
 
-{{!-- {{edit-form event=model editEvent='editEvent'}} --}}
-
-<button {{action 'editEvent'}}>Edit Event</button>
+{{!-- <button {{action 'editEvent'}}>Edit </button> --}}
 <button {{action 'deleteEvent'}}>Delete Event</button>
-
+{{event/edit-form editEvent='editEvent'}}
 
 {{!-- class="event-header" {{action 'toggleEventDetail'}} --}}
