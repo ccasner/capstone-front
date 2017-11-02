@@ -2,12 +2,12 @@
 
 <form {{action 'editEvent' on='submit'}}>
 
-  {{input placeholder='New Event Name' value=newEvent.title}}
-  {{input placeholder='New Event Location' value=newEvent.location}}
-  {{input placeholder='New Event Date' type="date" value=newEvent.date}}
-  {{input placeholder='New Event Time' type="time" value=newEvent.time}}
-  {{input placeholder='New Seats Available' value=newEvent.seats}}
-  {{input placeholder='New Event Details' value=newEvent.body}}
+  {{input placeholder=event.title value=event.title}}
+  {{input placeholder=event.location value=event.location}}
+  {{input placeholder=event.date type="date" value=event.date}}
+  {{input placeholder=event.time type="time" value=event.time}}
+  {{input placeholder=event.seats value=event.seats}}
+  {{input placeholder=event.body value=event.body}}
 
 
   <button type='submit'>Save</button>
