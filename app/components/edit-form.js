@@ -13,15 +13,10 @@ export default Ember.Component.extend({
   actions: {
     editEvent() {
       this.set('event.title', this.get('event.title'))
-      console.log(this.get('event.title'))
       this.set('event.location', this.get('event.location'))
-      console.log(this.get('event.location'))
       this.set('event.date', this.get('event.date'))
-      console.log(this.get('event.date'))
       this.set('event.time', this.get('event.time'))
-      console.log(this.get('event.time'))
       this.set('event.seats', this.get('event.seats'))
-      console.log(this.get('event.seats'))
       this.set('event.body', this.get('event.body'))
       console.log(this.get('event.body'))
       this.sendAction('editEvent', this.get('event'))
