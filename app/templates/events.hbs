@@ -1,8 +1,8 @@
 <h2>Pools</h2>
 
-{{#link-to 'events/new'}}Create Event{{/link-to}}
+{{!-- {{input placeholder='Search events' type="search"}} --}}
 
-<ul>
+<ul class='all-events'>
 
 {{#each model as |event|}}
 
@@ -11,6 +11,17 @@
 {{/each}}
 
 </ul>
-
-
-{{#link-to "index"}} Go Home {{/link-to}}
+{{!-- {{#bs-accordion as |acc|}}
+  {{#acc.item value="1" title="First item"}}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>
+  {{/acc.item}}
+  {{#acc.item value="2" as |aitem|}}
+    {{#aitem.title}}
+      <strong>Second</strong> <i>item</i>
+    {{/aitem.title}}
+    {{#aitem.body}}
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>
+    {{/aitem.body}}
+  {{/acc.item}}
+{{/bs-accordion}} --}}
+{{!-- {{#link-to "index"}} Go Home {{/link-to}} --}}
