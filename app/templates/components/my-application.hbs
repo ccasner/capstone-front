@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container-fluid">
     {{navbar-header}}
 
@@ -21,13 +21,19 @@
     </div>
   </div>
 </nav>
-
+<section class='welcome'>
 <h1>Welcome to Pool!</h1>
-
+<p>kdjehdekj  sjdba kujsdbd lakejhfb esjbd ku a djbdjhbdjb jbsd </p>
+</section>
+<section class='events-area'>
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-8 events-container">
   {{outlet}}
 </div>
+<div class='col-sm-3 network'>
+  <p>block</p>
+</div>
+</section>

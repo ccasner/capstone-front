@@ -1,28 +1,19 @@
-<h2>Pools</h2>
-
+<h2 class='events-header'>Pools</h2>
 {{!-- {{input placeholder='Search events' type="search"}} --}}
 
-<ul class='all-events'>
-
-{{#bs-accordion as |acc|}}
+<div class='all-events'>
 
 {{#each model as |event|}}
 
-{{#acc.item value="1" title=event.title}}
-
-<p>{{event.body}}</p>
-
-{{#link-to 'event' event}} View more details {{/link-to}}
-
-{{/acc.item}}
-
+  <div class=events-title>{{#link-to 'event' event}} {{event.title}} {{/link-to}}
+{{!-- {{#link-to 'event' event}} View more details {{/link-to}} --}}
+  </div>
 
 {{/each}}
-{{/bs-accordion}}
 
-</ul>
+</div>
 
-  {{!-- <div class=events-title>{{#link-to 'event' event}} {{event.title}} {{/link-to}}</div> --}}
+  <div class=events-title>{{#link-to 'event' event}} {{event.title}} {{/link-to}}</div>
 
 {{!-- {{#bs-accordion as |acc|}}
   {{#acc.item value="1" title="First item"}}
