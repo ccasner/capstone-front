@@ -4,13 +4,26 @@
 
 <ul class='all-events'>
 
+{{#bs-accordion as |acc|}}
+
 {{#each model as |event|}}
 
-  <div class=events-title>{{#link-to 'event' event}} {{event.title}} {{/link-to}}</div>
+{{#acc.item value="1" title=event.title}}
+
+<p>{{event.body}}</p>
+
+{{#link-to 'event' event}} View more details {{/link-to}}
+
+{{/acc.item}}
+
 
 {{/each}}
+{{/bs-accordion}}
 
 </ul>
+
+  {{!-- <div class=events-title>{{#link-to 'event' event}} {{event.title}} {{/link-to}}</div> --}}
+
 {{!-- {{#bs-accordion as |acc|}}
   {{#acc.item value="1" title="First item"}}
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>
