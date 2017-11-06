@@ -1,39 +1,52 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<body id="page-top">
+<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" id="mainNav">
   <div class="container-fluid">
     {{navbar-header}}
 
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="nav navbar-nav ml-auto">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Friends{{/link-to}}</li>
-        <li>{{#link-to 'events/new'}}Create Event{{/link-to}}</li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger">{{#link-to "users"}}Friends{{/link-to}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger">{{#link-to 'events'}}View Events{{/link-to}}</a>
+            </li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
-        <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger">{{#link-to "change-password"}}Change Password{{/link-to}}</a>
+          </li>
         <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
         {{else}}
-        <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
-        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger">{{#link-to "sign-up"}}Sign Up{{/link-to}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger">{{#link-to "sign-in"}}Sign In{{/link-to}}</a>
+            </li>
         {{/if}}
       </ul>
     </div>
   </div>
 </nav>
-<section class='welcome'>
-<h1>Welcome to Pool!</h1>
-<p>kdjehdekj  sjdba kujsdbd lakejhfb esjbd ku a djbdjhbdjb jbsd </p>
-</section>
+
+
+
+{{!-- <section class='welcome'>
+<h1>POOL</h1>
+<p>Rides for your kids from your circle of friends.</p>
+</section> --}}
 <section class='events-area'>
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="col-md-8 events-container">
+<div>
   {{outlet}}
 </div>
-<div class='col-sm-3 network'>
-  <p>block</p>
-</div>
+
 </section>
+</body>
