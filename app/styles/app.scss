@@ -34,11 +34,12 @@
 
 .welcome {
   text-align: center;
-  font-style: italic;
-  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  color: white;
   padding: 200px 0;
   margin-top: 0;
-  background-image: url(https://i.imgur.com/jfO3P2p.png);
+  background-image: url(https://i.imgur.com/IU9WtsW.jpg);
   background-size: cover;
 }
 // .events-container {
@@ -154,7 +155,7 @@ header.masthead {
       padding-top: 300px;
       padding-bottom: 200px;
       .intro-lead-in {
-        font-size: 40px;
+        font-size: 60px;
         font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
@@ -187,12 +188,12 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #C5CFEF; }
   a:hover {
-    color: #fec503; }
+    color: #C5CFEF; }
 
 .text-primary {
-  color: #fed136 !important; }
+  color: #C5CFEF !important; }
 
 h1,
 h2,
@@ -230,11 +231,11 @@ section {
   padding: 20px 40px; }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136; }
+  background-color: #C5CFEF;
+  border-color: #C5CFEF; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
+    background-color: #C5CFEF !important;
+    border-color: #C5CFEF !important;
     color: white; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important; }
@@ -248,13 +249,13 @@ section {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #C5CFEF;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
-    color: #fed136;
+    color: #C5CFEF;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #fec503; }
+      color: #C5CFEF; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -263,7 +264,7 @@ section {
     color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #fed136; }
+      color: #C5CFEF; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -337,8 +338,25 @@ header.masthead {
         text-transform: none;
       }
 
+.sign-form {
+  margin: 0 auto;
+  padding: 100px 20px 20px 20px;
+  width: 60%;
+  text-align: center;
+}
+.forms {
+  padding: 100px 20px 20px 20px;
+  margin: 0 auto;
+  width: 60%;
+}
+.why-us {
+  margin: 0 auto;
 
+}
+.list-item {
+  text-align: left;
+}
 .navbar {
-          background-color: black;
+          background-color: #3B5998;
           // position: fixed;
         }
