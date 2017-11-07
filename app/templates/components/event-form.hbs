@@ -3,12 +3,12 @@
 
 <form {{action 'createEvent' on='submit'}}>
 
-  {{input class='event-form' placeholder='Event Name' value=newEvent.title}}
-  {{input class='event-form' placeholder='Event Location' value=newEvent.location}}
-  {{input class='event-form' placeholder='Event Date' type="date" value=newEvent.date}}
-  {{input class='event-form' placeholder='Event Time' type="time" value=newEvent.time}}
-  {{input class='event-form' placeholder='Seats Available' value=newEvent.seats}}
-  {{input class='event-form' placeholder='Event Details' value=newEvent.body}}
+  {{input class='event-form' required='true' placeholder='Event Name' value=newEvent.title}}
+  {{input class='event-form' required='true' placeholder='Event Location' value=newEvent.location}}
+  {{input class='event-form' required='true' placeholder='Event Date' type="date" value=newEvent.date}}
+  {{input class='event-form' required='true' placeholder='Event Time' type="time" value=newEvent.time}}
+  {{input class='event-form' required='true' placeholder='Seats Available' value=newEvent.seats}}
+  {{input class='event-form' required='true' placeholder='Event Details' value=newEvent.body}}
 
   <button type='submit'>Save</button>
 </form>

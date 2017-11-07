@@ -385,6 +385,22 @@ header.masthead {
 .text-header {
   padding-bottom: 20px;
 }
+.event-details {
+  margin: 100px 0 0 100px;
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+.edit-details {
+  // clear: both;
+  float: right;
+  width: 40%;
+  margin: 100px 50px 0 0;
+  padding: 30px;
+}
+li {
+  list-style-type: none;
+}
 .navbar {
           background-color: #3B5998;
           // position: fixed;

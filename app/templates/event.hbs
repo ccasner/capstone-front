@@ -1,9 +1,12 @@
+<div>
+<div class="event-details">
 {{event-details event=model deleteEvent='deleteEvent'}}
-
+</div>
+<div class="edit-details">
 {{edit-form event=model editEvent='editEvent'}}
-
-{{#link-to 'events'}}Go to all events {{/link-to}}
-
+</div>
+{{#link-to 'events'}}Go to all events{{/link-to}}
+</div>
 {{!-- <div class='col-sm-3 network'>
   <p>Riders</p>
   {{event-riders rider=model}}

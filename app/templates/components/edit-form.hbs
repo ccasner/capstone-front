@@ -1,14 +1,20 @@
+
 <h3>Edit This Event</h3>
-
+<p>{{outlet}}</p>
 <form {{action 'editEvent' on='submit'}}>
-
+  <h4>What's Your Event?</h4>
   {{input placeholder=event.title value=event.title}}
+  <h4>Where?</h4>
   {{input placeholder=event.location value=event.location}}
+  <h4>What Date?</h4>
   {{input placeholder=event.date type="date" value=event.date}}
+  <h4>What Time?</h4>
   {{input placeholder=event.time type="time" value=event.time}}
+  <h4>Seats Available/Needed</h4>
   {{input placeholder=event.seats value=event.seats}}
+  <h4>Details</h4>
   {{input placeholder=event.body value=event.body}}
-
+  <h4>User: {{user}}</h4>
 
   <button type='submit'>Save</button>
 
