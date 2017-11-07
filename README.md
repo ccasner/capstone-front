@@ -1,6 +1,8 @@
 # Capstone Project Front-End (Ember)
 ## POOL - The carpooling app for you and your kids!
 
+<img src="https://i.imgur.com/vt27OVr.png">
+
 This app is designed for busy families who can never seem to find the time to get it all done. Instead of using apps like Uber or Lyft where you don't know who is driving your kid around, this app connects you with people that run in the same circles. It could be a group of parents from Billy's hockey team, Nancy's cello practice, Will's AV club, or even Barb's debate club in the upside down. Whatever it might be, your kid needs to get there and back safely and with POOL you can rest assured.
 
 - [Link to Backend-Api Repo](https://github.com/ccasner/capstone-back)
