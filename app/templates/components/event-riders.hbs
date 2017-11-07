@@ -1,0 +1,5 @@
+{{#if isAuthenticated}}
+  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger get-started">{{#link-to "events/new"}}Create Event{{/link-to}}</a>
+{{else}}
+  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger get-started">{{#link-to "sign-up"}}Get Started{{/link-to}}</a>
+{{/if}}

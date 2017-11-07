@@ -43,6 +43,7 @@ I'd been told that ember is a very powerful tool and as much as I wanted to beli
 | PATCH  | `/events/:id`          | `events#update`   |
 | DELETE | `/events/:id`          | `events#destroy`  |
 
+Install Dependencies: `npm install`
 
 ## Technologies Used
 

@@ -15,6 +15,10 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger">{{#link-to 'events/new'}}Create Event{{/link-to}}</a>
               </li>
+              {{else}}
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger">{{#link-to "sign-up"}}Get Started{{/link-to}}</a>
+            </li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
