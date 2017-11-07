@@ -1,11 +1,14 @@
+<div class="sign-form">
 <h2 class='events-header'>Pools</h2>
 {{!-- {{input placeholder='Search events' type="search"}} --}}
-
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
 <div class='all-events'>
 
 {{#each model as |event|}}
 
-  <div class=events-title>{{#link-to 'event' event}} {{event.title}} {{/link-to}}
+  <div class="events-title list-group-item">{{#link-to 'event' event}} {{event.title}} {{/link-to}}
 {{!-- {{#link-to 'event' event}} View more details {{/link-to}} --}}
   </div>
 
@@ -18,6 +21,7 @@
   <div class="events-container">
     {{outlet}}
   </div>
+</div>
 {{!-- {{#bs-accordion as |acc|}}
   {{#acc.item value="1" title="First item"}}
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>

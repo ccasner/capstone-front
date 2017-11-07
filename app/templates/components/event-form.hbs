@@ -1,13 +1,28 @@
-<h3>Create a new Event</h3>
+<div class='forms'>
+<h3 class='text-header'>Create a new Event</h3>
 
-<form {{action 'createEvent' on='submit'}}>
-
-  {{input class='event-form' placeholder='Event Name' value=newEvent.title}}
-  {{input class='event-form' placeholder='Event Location' value=newEvent.location}}
-  {{input class='event-form' placeholder='Event Date' type="date" value=newEvent.date}}
-  {{input class='event-form' placeholder='Event Time' type="time" value=newEvent.time}}
-  {{input class='event-form' placeholder='Seats Available' value=newEvent.seats}}
-  {{input class='event-form' placeholder='Event Details' value=newEvent.body}}
-
-  <button type='submit'>Save</button>
+<form class='form-style-4' {{action 'createEvent' on='submit'}}>
+<label for='field1'>
+  <span>Enter Event Name</span>{{input class='event-form' type='text' name='field1' required='true' value=newEvent.title}}
+</label>
+<label for='field2'>
+  <span>Enter Event Location</span>{{input class='event-form' type='text' name='field2' required='true' value=newEvent.location}}
+</label>
+<label for='field3'>
+  <span>Enter Event Date</span>{{input class='event-form' name='field3' required='true' type="date" value=newEvent.date}}
+</label>
+<label for='field4'>
+  <span>Enter Event Time</span>{{input class='event-form' name='field4' required='true' type="time" value=newEvent.time}}
+</label>
+<label for='field5'>
+  <span>Enter Seats Needed/Available</span>{{input class='event-form' name='field5' required='true' value=newEvent.seats}}
+</label>
+<label for='field6'>
+  <span>Enter Details</span>{{input class='event-form' name='field6' required='true' value=newEvent.body}}
+</label>
+<label>
+  <input type="submit" value="Post Event" />
+</label>
+  {{!-- <button type='submit'>Save</button> --}}
 </form>
+</div>
