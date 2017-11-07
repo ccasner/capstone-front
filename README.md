@@ -3,8 +3,8 @@
 
 This app is designed for busy families who can never seem to find the time to get it all done. Instead of using apps like Uber or Lyft where you don't know who is driving your kid around, this app connects you with people that run in the same circles. It could be a group of parents from Billy's hockey team, Nancy's cello practice, Will's AV club, or even Barb's debate club in the upside down. Whatever it might be, your kid needs to get there and back safely and with POOL you can rest assured.
 
-[Link to Backend-Api Repo] (https://github.com/ccasner/capstone-back)
-[Link to Backend-Api Deployed Site] (https://fathomless-scrubland-48602.herokuapp.com/)
+- [Link to Backend-Api Repo](https://github.com/ccasner/capstone-back)
+- [Link to Backend-Api Deployed Site](https://fathomless-scrubland-48602.herokuapp.com/)
 
 ## Development Process
 
@@ -14,19 +14,18 @@ I'd been told that ember is a very powerful tool and as much as I wanted to beli
 
 ## Planning
 
-[Link to Wireframe] (https://i.imgur.com/hHrgTQw.png)
-[Link to ERD] (https://i.imgur.com/nTYLf9F.png)
+- [Link to Wireframe](https://i.imgur.com/hHrgTQw.png)
+- [Link to ERD](https://i.imgur.com/nTYLf9F.png)
 
 ### User Stories
-- User can sign up to make new account
+- User can sign-up to make new account
 - User can sign-in to their personal account.
 - User can change their password.
 - User can sign-out of their account.
-- Be able to add bucket list items to personal list as registered user
-- User can edit their list items.
-- User can delete their list items.
-- User cannot see any list items until they create one
-- User has ability to search for personal list items using 3rd party api (yelp) and add items they like to their list
+- User can create a new event.
+- User can edit an existing event.
+- User can delete an event.
+- User can see other user's events.
 
 ## Rails API end-points
 
