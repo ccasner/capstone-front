@@ -4,7 +4,11 @@ export default Ember.Component.extend({
   newEvent: {
     title: null,
     hidden: false,
-    location: null
+    location: null,
+    date: null,
+    time: null,
+    seats: null,
+    body: null
   },
   actions: {
     createEvent() {

@@ -1,21 +1,37 @@
 
-<h3>Edit This Event</h3>
+<h3 class='text-header'>Edit This Event</h3>
 <p>{{outlet}}</p>
-<form {{action 'editEvent' on='submit'}}>
-  <h4>What's Your Event?</h4>
-  {{input placeholder=event.title value=event.title}}
-  <h4>Where?</h4>
-  {{input placeholder=event.location value=event.location}}
-  <h4>What Date?</h4>
-  {{input placeholder=event.date type="date" value=event.date}}
-  <h4>What Time?</h4>
-  {{input placeholder=event.time type="time" value=event.time}}
-  <h4>Seats Available/Needed</h4>
-  {{input placeholder=event.seats value=event.seats}}
-  <h4>Details</h4>
-  {{input placeholder=event.body value=event.body}}
-  <h4>User: {{user}}</h4>
+<form class='form-style-4' {{action 'editEvent' on='submit'}}>
+  <label for='field1'>
+  <span>What's Your Event?</span>
+  {{input placeholder=event.title name='field1' value=event.title}}
+</label>
+  <label for='field2'>
+  <span>Where?</span>
+  {{input placeholder=event.location name='field2' value=event.location}}
+</label>
+<label for='field3'>
+  <span>What Date?</span>
+  {{input placeholder=event.date type="date" name='field3' value=event.date}}
+</label>
+<label for='field4'>
+  <span>What Time?</span>
+  {{input placeholder=event.time type="time" name='field4' value=event.time}}
+</label>
+<label for='field5'>
+  <span>Seats Available/Needed</span>
+  {{input placeholder=event.seats name='field5' value=event.seats}}
+</label>
+<label for='field6'>
+  <span>Details</span>
+  {{input placeholder=event.body name='field6' value=event.body}}
+</label>
+<label for='field7'>
+  <span>User: {{user}}</span>
+</label>
 
-  <button type='submit'>Save</button>
+<label>
+  <input type="submit" value="Save Changes" />
+</label>
 
 </form>
