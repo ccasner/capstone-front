@@ -37,11 +37,15 @@
   font-family: 'Righteous', cursive;
   font-size: 30px;
   color: white;
-  padding: 200px 0;
+  padding: 100px 0;
   margin-top: 0;
-  background-image: url(https://i.imgur.com/IU9WtsW.jpg);
-  background-size: cover;
+  background: url(https://i.imgur.com/LfXhmoT.png) no-repeat center;
+  background-color: #4A93C7;
 }
+.get-started {
+  margin-top: 400px;
+}
+
 // .events-container {
 //   float: left;
 //   width: 70%;
@@ -220,7 +224,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 50px 0; } }
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -338,6 +342,24 @@ header.masthead {
         text-transform: none;
       }
 
+#why-us {
+  background-color: #4A93C7;
+  color: white;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+  #why-us .text-header {
+    font-size: 36px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #4A93C7;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#why-us .list-item {
+  font-size: 16px;
+}
 .sign-form {
   margin: 0 auto;
   padding: 100px 20px 20px 20px;
@@ -355,6 +377,13 @@ header.masthead {
 }
 .list-item {
   text-align: left;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.text-header {
+  padding-bottom: 20px;
 }
 .navbar {
           background-color: #3B5998;
